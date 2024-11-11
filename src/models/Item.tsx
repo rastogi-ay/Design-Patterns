@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Draggable, {DraggableData, DraggableEvent} from 'react-draggable';
+import '../styles/Item.css'
 
 export interface ItemProps {
     title: string,
@@ -22,7 +23,7 @@ function Item(props: ItemProps) {
 
     return (
         <Draggable position={position} onStop={handleStop}>
-            <div className="class">
+            <div className="item">
                 {title}
             </div>
         </Draggable>
